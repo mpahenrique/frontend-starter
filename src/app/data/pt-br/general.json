@@ -1,0 +1,24 @@
+{
+    "pagesLink": [
+        {
+            "name": "Empresa",
+            "url": "empresa.html",
+            "anchor": "empresa"
+        },
+        {
+            "name": "Produtos",
+            "url": "produtos.html"
+        },
+        {
+            "name": "Contato",
+            "url": "contato.html",
+            "anchor": "contato"
+        },
+        {
+            "name": "Login",
+            "url": "login.html",
+            "anchor": "login",
+            "isModalAnchor": true
+        }
+    ]
+}

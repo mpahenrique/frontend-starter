@@ -22,8 +22,7 @@
 		<meta name="{{metadata.name}}" content="{{metadata.content}}">
 	{% endfor %}
 	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="favicon" href="/img/general/logotipo-tempook.png">
+	<link rel="favicon" href="/img/general/favicon.png">
 	<link rel="stylesheet" href="/css/index.css">
 
 </head>
@@ -39,7 +38,6 @@
 	</main>
 
 	{% include "../modules/footer.nunj" %}
-	{% include "../modules/modals.nunj" %}
 
 	<script src="/js/index.js"></script>
 </body>

@@ -1,10 +1,10 @@
 {
-  "name": "tempo-ok",
-  "version": "0.0.0",
-  "description": "TempoOk",
+  "name": "frontend-starter",
+  "version": "0.0.1",
+  "description": "Project based in a frontend starter.",
   "main": "gulpfile.js",
   "application": {
-    "main": "inicio.html",
+    "main": "index.html",
     "paths": {
       "frontend": {
         "root": "./app",
@@ -64,10 +64,12 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "dom-manipulator": "^1.0.2",
+    "dom-manipulator": "^1.0.4",
     "es5-shim": "^4.5.9",
     "html5shiv": "^3.7.3",
     "localstorage-manipulator": "^1.0.1",
-    "xhrt": "^1.0.1"
+    "xhrt": "^1.0.1",
+    "validate-my-form": "^1.0.4",
+    "mask-form": "^1.0.1"
   }
 }

@@ -13,6 +13,7 @@
 <!--[if !IE]><!-->
 <html lang="pt-br">
 <!--<![endif]-->
+
 <head>
 	<meta charset="UTF-8">
 	<title>{{ title }}</title>

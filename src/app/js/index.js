@@ -15,11 +15,11 @@ function index (){
     window.onload = null;
 
     /*************** Views ids ***************\
-    |  Main View         : inicio             |
+    |  Main View         : index             |
     \****************** End ******************/
 
     var views   = {
-        inicio : require( './views/inicio' )
+        index : require( './views/index' )
     }
     ,   general = require( './general/' )
     ,   ctrl    = views[document.body.id]

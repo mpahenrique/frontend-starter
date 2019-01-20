@@ -1,1 +1,0 @@
-This directory was made for inclusion of 3rd.js dependencies that cannot be requirable or has some bug/issue to be used like a node_module.

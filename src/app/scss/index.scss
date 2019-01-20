@@ -1,18 +1,22 @@
 // ***** Fonts ****** //
+// @import "fonts/some-fontface-file-declaration" ;
 
 // ******** Util ******* //
+@import "util/reset"     ;
 @import "util/variables" ;
 @import "util/mixins"    ;
-@import "util/reset"     ;
 @import "util/helpers"   ;
 @import "util/general"   ;
 
-// ****** Modules ****** //
-@import "modules/header" ;
-@import "modules/main"   ;
-@import "modules/footer" ;
+// ****** 3rd-modules ****** //
+// @import "3rd-modules/some-module";
 
-// ****** Views ****** //
-@import "views/inicio" ;
+// ****** Modules ****** //
+// @import "modules/some-module";
+
 
 // ***** Partials ****** //
+// @import "partials/some-partial";
+
+// ****** Views ****** //
+// Only in specific cases

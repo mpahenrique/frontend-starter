@@ -1,8 +1,7 @@
 function init(){
 
-    var environment = {
-        name : 'dev',
-        url  : window.location.origin
+    const environment = {
+        url  : ''
     },
     baseUrls = {
         services  : environment.url + '/services',
@@ -11,14 +10,8 @@ function init(){
     },
     services = {},
     templates = {}
-    config = {
-        environment : environment,
-        baseUrls    : baseUrls,
-        services    : services,
-        templates   : templates
-    }
 
-    return config;
+    return { environment, baseUrls, services, templates }
+
 }
-
 module.exports = init();

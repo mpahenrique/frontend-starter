@@ -1,0 +1,1 @@
+<section id="{{moduleData.config.id}}" class="{{moduleData.config.type}}"></section>

@@ -1,7 +1,7 @@
 {
   "name": "frontend-starter",
-  "version": "0.0.1",
-  "description": "Project based in a frontend starter.",
+  "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
   "application": {
     "main": "index.html",
@@ -12,8 +12,11 @@
         "js": "/js",
         "assets": "/assets",
         "fonts": "/fonts",
-        "images": "/img",
+        "imagesDesktop": "/img-desktop",
+        "imagesMobile": "/img-mobile",
         "data": "/data",
+        "video": "/video",
+        "pdf": "/pdf",
         "markup": {
           "root": "/markup",
           "views": "/views",
@@ -26,8 +29,11 @@
         "css": "/css",
         "js": "/js",
         "fonts": "/fonts",
-        "images": "/img",
+        "imagesDesktop": "/img-desktop",
+        "imagesMobile": "/img-mobile",
         "data": "/data",
+        "video": "/video",
+        "pdf": "/pdf",
         "markup": {
           "root": "/",
           "templates": "/templates"
@@ -40,7 +46,7 @@
     "url": ""
   },
   "author": "Henrique Aveiro",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "browserify": "^13.0.1",
@@ -50,26 +56,34 @@
     "gulp-clean-css": "^2.0.11",
     "gulp-concat": "^2.6.0",
     "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^3.0.1",
+    "gulp-minify": "^2.1.0",
     "gulp-nunjucks": "^2.2.0",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pxtorem": "^2.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.1.1",
     "gulp-tap": "^0.1.3",
     "gulp-uglify": "^1.5.4",
+    "gulp-watch": "^5.0.1",
+    "purify-css": "^1.2.5",
+    "recursivejs": "^1.0.5",
+    "stringify": "^5.1.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "dom-manipulator": "^1.0.4",
+    "aos": "^2.3.0",
+    "dom-manipulator": "^1.0.6",
     "es5-shim": "^4.5.9",
+    "fullpage.js": "^3.0.2",
+    "gsap": "^2.0.1",
     "html5shiv": "^3.7.3",
     "localstorage-manipulator": "^1.0.1",
-    "xhrt": "^1.0.1",
-    "validate-my-form": "^1.0.4",
-    "mask-form": "^1.0.1"
+    "xhrt": "^1.0.15"
   }
 }

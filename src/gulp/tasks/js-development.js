@@ -7,15 +7,18 @@ var gulp           = require('gulp')
 ,   source         = require('vinyl-source-stream')
 ,   buffer         = require('vinyl-buffer')
 ,   browserify     = require('browserify')
-,   watchify       = require('watchify');
+,   watchify       = require('watchify')
+,   stringify      = require('stringify');
 
 
 gulp.task('js-development', () => {
     var b = browserify({
         cache: {},
         packageCache: {},
-        fullPaths: true
-    });
+        fullPaths: false
+    }).transform(stringify, {
+      appliesTo: { includeExtensions: ['.nunj'] }
+    });;
     b = watchify(b);
     b.on('update', () => {
         bundleShare(b);

@@ -27,7 +27,7 @@ gulp.task('browser-sync', () => {
             console.log('--->', info.path, info.type);
         });
 
-    gulp.watch([build.root + '/**/*', '!' + build.root + '/img/**/*'])
+    gulp.watch([build.root + '/**/*', '!' + build.root + '/img/**/*', '!' + build.root + '/fonts/**/*'])
         .on('change', (info) => {
             console.log('--->', info.path, info.type);
             browserSync.reload();

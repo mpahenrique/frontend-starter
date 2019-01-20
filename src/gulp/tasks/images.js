@@ -5,7 +5,11 @@ var gulp     = require('gulp')
 ,   build    = appData.paths.build
 
 gulp.task('images', () => {    
-    gulp.src([frontend.root + frontend.images + '/**/*.{png,jpg,gif,svg}'])
-        .pipe(imagemin())
-        .pipe(gulp.dest(build.root + build.images));
+    gulp.src([frontend.root + frontend.imagesDesktop + '/**/*.{png,jpg,gif,svg,ico}'])
+        // .pipe(imagemin())
+        .pipe(gulp.dest(build.root + build.imagesDesktop));
+
+    gulp.src([frontend.root + frontend.imagesMobile + '/**/*.{png,jpg,gif,svg,ico}'])
+        // .pipe(imagemin())
+        .pipe(gulp.dest(build.root + build.imagesMobile));
 });

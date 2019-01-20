@@ -2,8 +2,10 @@ var gulp = require('gulp');
 
 gulp.task('build', [
     'data',
+    // 'video',
+    'pdf',
     'fonts',
-    'images',
+    // 'images',
     'js-development',
     'markup',
     'scss-development',

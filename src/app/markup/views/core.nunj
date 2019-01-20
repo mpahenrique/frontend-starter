@@ -1,0 +1,9 @@
+{% extends "./app/markup/layouts/" + template + ".nunj" %}
+
+{% set pageData = {} %}
+{% block content %}
+    {% for module in modules %}
+        {% set moduleData = module %}
+        {% include "./app/markup/modules/" + moduleData.config.type + ".nunj" %}
+    {% endfor %}
+{% endblock %}

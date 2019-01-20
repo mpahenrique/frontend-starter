@@ -1,8 +1,3 @@
-{% set metadatas = [
-	{ name : "viewport", content : "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no"},
-	{ name : "theme-color", content : "#000" }
-] %}
-
 <!DOCTYPE html>
 <!--[if IE 8]>
 <html lang="pt-br" class="ie8">
@@ -13,32 +8,42 @@
 <!--[if !IE]><!-->
 <html lang="pt-br">
 <!--<![endif]-->
-
 <head>
 	<meta charset="UTF-8">
-	<title>{{ title }}</title>
- 
-	
-	{% for metadata in metadatas %}
+	<title>{{pageTitle}}</title> 	
+	{% for metadata in metatags %}
 		<meta name="{{metadata.name}}" content="{{metadata.content}}">
-	{% endfor %}
-	
-	<link rel="favicon" href="/img/general/favicon.png">
+	{% endfor %}	
+	<link rel="icon" type="image/ico"  href="/img/general/favicon.ico">
 	<link rel="stylesheet" href="/css/index.css">
-
 </head>
 <body id="{{id}}">
-	
-	{% include "../modules/header.nunj" %}
+
+	{% if header %}
+		{% include "../modules/" + header.config.type + ".nunj" %}
+	{% endif %}
+
+	{% if aside %}
+		{% include "../modules/" + aside.config.type + ".nunj" %}
+	{% endif %}
 
 	<main>
-		<article>
+		<article id="modules">
 			{% block content %}
 			{% endblock %}
 		</article>
 	</main>
 
-	{% include "../modules/footer.nunj" %}
+	{% if footer %}
+		{% include "../modules/" + footer.config.type + ".nunj" %}
+	{% endif %}
+
+	{% if extras %}
+		{% for extra in extras %}
+        	{% set moduleData = extra %}
+        	{% include "../modules/" + moduleData.config.type + '.nunj' %}
+    	{% endfor %}
+	{% endif %}
 
 	<script src="/js/index.js"></script>
 </body>

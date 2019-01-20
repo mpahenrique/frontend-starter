@@ -1,0 +1,66 @@
+{
+  "id": "index",
+  "template": "index",
+  "pageTitle": "Page Title | Sample Brand",
+  "header": {
+    "config" : {
+    	"type": "header-default",
+    	"id" : "header-id"
+    },
+    "props" : {
+    	"menu" : {}	
+    }
+  },
+  "footer": {
+    "config" : {
+      "type": "footer-default",
+      "id" : "footer-id"
+    },
+    "props" : {}
+  },
+  "aside": {
+    "config" : {
+      "type": "aside-default",
+      "id" : "aside-id"
+    },
+    "props" : {}
+  },
+  "metatags": [
+    {
+      "name": "description",
+      "content": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no"
+    },
+    {
+      "name": "theme-color",
+      "content": "#000"
+    }
+  ],
+  "modules": [
+  	{
+  		"config" : {
+	  		"type" : "module-type",
+	  		"id" : "module-id",
+        "preload" : true
+  		},
+  		"props" : {
+  			"title" : "Lorem Ipsum Dolor sit amet"
+  		}
+  	}
+  ],
+  "extras": [
+    {
+      "config" : {
+        "type" : "extra-module-type",
+        "id" : "extra-module-id",
+        "preload" : false
+      },
+      "props" : {
+        "title" : "Lorem Ipsum Dolor sit amet"
+      }
+    }
+  ]
+}

@@ -1,13 +1,7 @@
-function init(){
-
-    // call this function if your application need to do
-    // something before load, like geolocation, etc. Sample:
-    //
-    //  doSomething().then(index);
-    //
-
+function init(app, modules) {
+	console.info(modules)
 }
 
-module.exports = {
+module.exports = { 
     init : init
 }

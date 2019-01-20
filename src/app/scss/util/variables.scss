@@ -1,6 +1,27 @@
-// Colors:
-$primary    : #000;
-$white      : #fff;
+/* Put above your brands colors */
+
+// Colors
+$someColor : #000;
 
 // Z-index
 $zIndexBase : 1000;
+
+// Sizes
+$layoutResBaseDesktop : 1920;
+$layoutResBaseTablet  : 800;
+$layoutResBaseMobile  : 320;
+$layoutColumns        : 12;
+
+// Columns
+$col1  : 100vw/16*1;
+$col2  : 100vw/16*2;
+$col3  : 100vw/16*3;
+$col4  : 100vw/16*4;
+$col5  : 100vw/16*5;
+$col6  : 100vw/16*6;
+$col7  : 100vw/16*7;
+$col8  : 100vw/16*8;
+$col9  : 100vw/16*9;
+$col10 : 100vw/16*10;
+$col11 : 100vw/16*11;
+$col12 : 100vw/16*12;

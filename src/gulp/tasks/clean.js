@@ -1,10 +1,9 @@
 var gulp     = require('gulp')
-,   del      = require('del')
+,		clean    = require('gulp-clean')
 ,   appData  = require('../util/application-data')
-,   build    = appData.paths.build;
-
-gulp.task('clean', function() {
-    del([build.root + '/*'], {force : true}).then(paths => {
-        console.log('Removed * from path ' + build.root);
-    });
+,   build    = appData.paths.build
+ 
+gulp.task('clean', function () {
+    return gulp.src(build.root, { force: true, read: false })
+        .pipe(clean());
 });

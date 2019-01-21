@@ -24,10 +24,18 @@ A simple way to starter your projects with the most commons packages and more.
 ### Installation
 ```sh
 $ git clone git@github.com:mpahenrique/frontend-starter.git
-$ cd frontend-starter
-$ cd src
-$ npm install
+$ cd frontend-starter/src
+$ npm i
 ```
 
-#### Usage
-> After instalation, you can start gulp in src folder
+#### Usage (development mode)
+```sh
+$ cd frontend-starter/src
+$ npm run dev
+```
+
+#### Usage (production mode)
+```sh
+$ cd frontend-starter/src
+$ npm run build
+```

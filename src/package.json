@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "scripts": {
+    "dev": "./bin/dev.sh",
+    "build": "./bin/build.sh",
+    "setup": "./bin/setup.sh"
+  },
   "application": {
     "main": "index.html",
     "paths": {
@@ -12,8 +17,7 @@
         "js": "/js",
         "assets": "/assets",
         "fonts": "/fonts",
-        "imagesDesktop": "/img-desktop",
-        "imagesMobile": "/img-mobile",
+        "images": "/img",
         "data": "/data",
         "video": "/video",
         "pdf": "/pdf",
@@ -29,8 +33,7 @@
         "css": "/css",
         "js": "/js",
         "fonts": "/fonts",
-        "imagesDesktop": "/img-desktop",
-        "imagesMobile": "/img-mobile",
+        "images": "/img",
         "data": "/data",
         "video": "/video",
         "pdf": "/pdf",
@@ -53,6 +56,7 @@
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^2.0.11",
     "gulp-concat": "^2.6.0",
     "gulp-data": "^1.2.1",
@@ -67,7 +71,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.1.1",
     "gulp-tap": "^0.1.3",
-    "gulp-uglify": "^1.5.4",
+    "gulp-uglify-es": "^1.0.4",
     "gulp-watch": "^5.0.1",
     "purify-css": "^1.2.5",
     "recursivejs": "^1.0.5",

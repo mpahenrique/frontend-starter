@@ -9,7 +9,7 @@ var gulp       = require('gulp')
 ,   browserify = require('browserify')
 ,   watchify   = require('watchify')
 ,   stringify  = require('stringify')
-,   uglify     = require('gulp-uglify')
+,   uglify     = require('gulp-uglify-es').default
 ,   minify     = require('gulp-minify')
 
 gulp.task('js-release', () => {

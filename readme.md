@@ -2,7 +2,7 @@
 
 Frontend Starter is a framework to help you build web applications using organized and optimized structure. Each page has its JSON file, where you can declarate your theme componentes and modules.
 
-##### Undestanding the structure:
+##### Understanding the structure:
 
 
 ```
